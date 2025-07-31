@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Idioma de la pagina-->
+<head>
+    <meta charset="UTF-8"> <!-- Metadato-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Metadato-->
+    <title>Shoes For All</title> <!--Titulo de la pagina web-->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico"> <!--Favicon-->
+    <link rel="stylesheet" href="../css/estilos.css"> <!-- Estilos CSS-->
+</head>
+<body> <!--Estructura de la pagina-->
+    <header> <!-- Cabecera-->
+        <h1>Shoes For All</h1> <!--Nombre de la empresa-->
+        <nav class="navigationbar"> <!--Barra de navegación-->
+            <ul class="navigationbarlist"> <!--Lista desordenada -->
+                <li>
+                    <a class="enlace" href="../index.html">Inicio</a> <!--Enlace de inicio-->
+                </li>
+                <li>
+                    <a class="enlace active" href="#">Presupuestos</a> <!--Enlace presupuestos-->
+                </li>
+                <Li>
+                    <a class="enlace" href="./productos.html">Productos</a> <!--Enlace de productos-->
+                </Li>
+                <li>
+                    <a class="enlace" href="./contacto.html">Contacto</a> <!--Enlace de contacto-->
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!--Pagina principal-->
+        <section> <!--Sección formulario-->
+            <h2 class="h2presupuesto">Rellena el formulario y pide tu presupuesto sin compromiso</h2> <!-- Titulo formulario-->
+            <div class="contenedorformulario">
+                <form id="myForm" name="myForm" action="#" method="get" target="_self"> <!-- Establecer formulario y asignar donde guardar los datos-->
+                    <ul class="formulario"> <!--Lista desordenada-->
+                        <li>
+                            <label for="first-name">Nombre</label> <!--Etiqueta para el nombre-->
+                            <input type="text" id="first-name" name="first-name" 
+                            placeholder="Escriba su nombre" pattern="[A-Z a-z]{3,15}"
+                            title="Escriba solo letras entre 3 y 15 caracteres" required> <!--Obligación de rellenar con lo requerido en el input-->
+                        </li>
+                        <li>
+                            <label for="email">Correo Electronico</label> <!--Etiqueta para el email-->
+                            <input type="email" id="email" name="email" 
+                            placeholder="Escriba su correo electronico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}"
+                            title="Escriba su correo electronico" required> <!--Obligación de rellenar con lo requerido en el input-->
+                        </li>
+                        <li>
+                            <label for="telefono">Telefono</label> <!--Etiqueta para el numero de telefono-->
+                            <input type="tel" id="telefono" name="telefono" 
+                            placeholder="Escriba su numero de telefono" pattern="[0-9]{9}"
+                            title="Escriba su numero de telefono" required> <!--Obligación de rellenar con lo requerido en el input-->
+                        </li>
+                        <li>
+                            <label for="mensaje">Mensaje</label> <!--Etiqueta para el mensaje-->
+                            <textarea rows="6" id="mensaje" placeholder="Escriba aqui su mensaje" required></textarea> <!--Obligación de rellenar con lo requerido en el textarea-->
+                        </li>
+                        <li>
+                            <label for="checkbox">Acepta la Política de privacidad de la empresa</label> <!--Checkbox politica privacidad-->
+                            <input type="checkbox" id="checkbox" name="checkbox" required> <!--Obligacion de marcar el checkbox-->
+                        </li>
+                        <li class="botones">
+                            <button type="reset">Borrar</button> <!--Boton para borrar formulario-->
+                            <button type="submit">Enviar</button> <!--Boton para enviar formulario-->
+                        </Li>
+                    </ul>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer> <!--Pie de pagina-->
+        <div class="piedepagina">
+            <p>Siguenos en:</p>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"> <!--Enlace icono Facebook-->
+                <img class="logo" src="../assets/images/logofacebook.jpg" alt="logofacebook" width="50" height="50"></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"> <!--Enlace icono instagram-->
+                <img class="logo" src="../assets/images/logoinstagram.jpg" alt="logoinstagram" width="50" height="50"></a>
+            <p class="pfinal"> :: Sin derechos de autor en nada a lo referente a esta web :: <br> Esta web esta realizada con fines educativos y como prueba para un examen</p> <!-- Aviso legal-->
+            <p class="dirfooter">Encuentranos en: Avenida gran via nº42 de Madrid</p> <!-- Dirección empresa-->
+        </div>
+    </footer>
+</body>
+</html>
