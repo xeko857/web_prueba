@@ -107,6 +107,7 @@ section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 20px;
+  
 }
 
 h2{
@@ -118,10 +119,15 @@ h2{
 }
 
 .imagen{
-    width: 200px; 
-    height: 200px; 
-    margin: 40px; 
+
+    margin: 30px; 
 }
+
+.imagenzapatillas{
+    width: 200px;
+    height: 200px;
+}
+    
 
 p{
     text-align: center;
